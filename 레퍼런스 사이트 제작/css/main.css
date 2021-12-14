@@ -344,7 +344,7 @@ br.mo { display: none; }
         transition: width 0.3s; z-index: 300;    
     }
    
-    header nav.on { width: 70%; min-width: 300px; }
+    header nav.on {width: 0; transition: all 1s;}
     /* 모바일 X 버튼 */
     header nav .close { display: block; position: absolute; right: 10px; top: 0; font-size: 35px; padding: 5px; box-sizing: border-box;} 
     header nav .gnb { margin-top: 100px;}

@@ -22,15 +22,19 @@ $(function() {
     // 햄버거 버튼 클릭 이벤트
     $('header .open').on('click', function() {
         $('body').css({ 'overflow' : 'hidden'})
-        $('header .bg').css({ 'display': 'block'})
+        // $('header .bg').css({ 'display': 'block'})
+        $('header .bg').fadeIn(1500)
         $('header nav').addClass('on')
+        $('header nav').css({'width': '300px'})
     })
 
     // x 버튼 클릭 이벤트
     $('header .close, header .bg').on('click', function() {
         $('body').css({ 'overflow' : 'auto'})
-        $('header .bg').css({ 'display': 'none'})
+        // $('header .bg').css({ 'display': 'none'})
+        $('header .bg').fadeOut(1500)
         $('header nav').removeClass('on')
+        $('header nav').css({'width': '0'})
     })
 
 
