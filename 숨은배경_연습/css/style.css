@@ -1,0 +1,17 @@
+header {width: 100%; min-height: 100px; background-color:coral;}
+footer {width: 100%; min-height: 300px; background-color:darkslategray;}
+
+section {
+    width:100%;
+    min-height: 300px;
+    background-color: lightgray;
+}
+
+section.bg {
+    height: 600px;
+    background-image: url(../img/chris-lehr-HFJ3HJj01vQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
