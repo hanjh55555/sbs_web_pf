@@ -9,7 +9,7 @@ $(function () {
         autoplay: {                     // 자동재생    
             delay: 1000,                // 슬라이드 당 지연시간 (ms) 
             pauseOnMouseEnter: true,    // 슬라이드에 마우스 올려두면, 자동재생 멈춤
-            disableOnInteraction: true, // 인터렉션(화살표,드래그,...) 중의 자동재생 비활성화여부
+            disableOnInteraction: false, // 인터렉션(화살표,드래그,...) 중의 자동재생 비활성화여부
         },
 
 

@@ -4,14 +4,15 @@
 
 
     // 스와이퍼 시작!
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper-container-horizontal swiper-container-wp8-horizontal', {
         
         direction: 'horizontal',
-        // Infinity:true,        // 슬라이드 방향 : 'vertical', 'horizontal'
-        loop: true,                     // 반복여부
+        // Infinity:true,        
         autoplay: {                     // 자동재생    
             delay: 1000,                // 슬라이드 당 지연시간 (ms) 
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            loop: true,                     // 반복여부
             
         },
 
@@ -24,7 +25,7 @@
         // 페이지 네이션 (• • • • •)
         pagination: {
             el: '.swiper-pagination-bullets',       // 페이지 네이션이 적용될 요소 (선택자)
-            type: 'bullets',            // 'bullets'        : • • • 
+            type: 'bullet',            // 'bullets'        : • • • 
                                             // 'fraction'       : (현재번호/전체번호) 
                                             // 'progressbar'    : 진행률(게이지)
                                             // 'custom'         
@@ -61,11 +62,13 @@ $(function () {
         direction: 'horizontal',        // 슬라이드 방향 : 'vertical', 'horizontal'
         // loop: true,    
         dots: true,
-        arrows: true,                 // 반복여부
-        autoplay: {                     // 자동재생    
-            delay: 1500,                // 슬라이드 당 지연시간 (ms) 
-            Infinity:true,
+        arrows: true,                 
+        autoplay: {                        
+            delay: 1500,                
+            // Infinity:true,
+            pauseOnMouseEnter: true,
             disableOnInteraction: false,
+            
         },
 
 
